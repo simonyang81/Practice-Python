@@ -59,3 +59,9 @@ print 'hello world'.replace('world', 'simon')
 
 # 类似find, 不过是查找最后一个出现的字符
 print 'hello world'.rfind('o')
+
+# 检查字符串是否以obj开头
+print 'hello world'.startswith('hl')
+
+# 翻转字符串大小写
+print 'hELLO wORLD'.swapcase()
