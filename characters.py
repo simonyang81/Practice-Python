@@ -47,3 +47,15 @@ print ':'.join('hello world')
 
 # 转换所有大写字符为小写
 print 'HELLO WORLD'.lower()
+
+# 去掉左边的空格
+print '\'' + '    hello world     '.lstrip() + '\''
+
+# 去掉右边的空格
+print '\'' + '    hello world     '.rstrip() + '\''
+
+# 替换字符串, 如果num指定, 则替换次数不超过num
+print 'hello world'.replace('world', 'simon')
+
+# 类似find, 不过是查找最后一个出现的字符
+print 'hello world'.rfind('o')
