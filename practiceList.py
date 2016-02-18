@@ -37,4 +37,3 @@ print sum([1., 3, 5., 7, 9])
 
 sList.insert(1, 'Simon')
 print sList
-
