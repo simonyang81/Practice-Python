@@ -1,4 +1,4 @@
-# coding=gbk
+# coding=utf-8
 
 from string import Template
 
@@ -23,45 +23,45 @@ print 'H in aString ==', 'H' in aString
 
 print '----------------------'
 
-# °ÑµÚÒ»¸ö×Ö·û×ª³É´óĞ´
+# æŠŠç¬¬ä¸€ä¸ªå­—ç¬¦è½¬æˆå¤§å†™
 print 'hello world'.capitalize()
 
-# ·µ»ØÒ»¸öÔ­×Ö·û´®¾ÓÖĞ, ²¢Ê¹ÓÃ¿Õ¸ñÌî³äÖÁ³¤¶ÈwidthµÄĞÂ×Ö·û´®
+# è¿”å›ä¸€ä¸ªåŸå­—ç¬¦ä¸²å±…ä¸­, å¹¶ä½¿ç”¨ç©ºæ ¼å¡«å……è‡³é•¿åº¦widthçš„æ–°å­—ç¬¦ä¸²
 print '-' + 'hello world'.center(20) + '-'
 
-# string.count(str, start, end), ·µ»ØstrÔÚstringÀï³öÏÖµÄ´ÎÊı, Èç¹ûstart»òÕßendÖ¸¶¨, Ôò·µ»ØÖ¸¶¨·¶Î§ÄÚµÄ
+# string.count(str, start, end), è¿”å›stråœ¨stringé‡Œå‡ºç°çš„æ¬¡æ•°, å¦‚æœstartæˆ–è€…endæŒ‡å®š, åˆ™è¿”å›æŒ‡å®šèŒƒå›´å†…çš„
 print 'hello world'.count('l')
 
-# ¼ì²é×Ö·û´®ÊÇ·ñÒÔobj½áÊø
+# æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦ä»¥objç»“æŸ
 print 'hello world'.endswith('ld')
 
-# string.find(str), ¼ì²âstrÊÇ·ñ°üº¬ÔÚstringÖĞ, Èç¹ûÊÇ·µ»Ø¿ªÊ¼µÄË÷ÒıÖµ, ·ñÔò·µ»Ø-1
+# string.find(str), æ£€æµ‹stræ˜¯å¦åŒ…å«åœ¨stringä¸­, å¦‚æœæ˜¯è¿”å›å¼€å§‹çš„ç´¢å¼•å€¼, å¦åˆ™è¿”å›-1
 t = Template('\'e\' index \'${idx}\' in hello world')
 print t.safe_substitute(idx='hello world'.find('e'))
 
-# Èç¹ûstringÖÁÉÙÓĞÒ»¸ö×Ö·û²¢ÇÒËùÓĞ×Ö·û¶¼ÊÇ×ÖÄ¸»òÊı×ÖÔò·µ»ØTrue, ·ñÔò·µ»ØFalse
+# å¦‚æœstringè‡³å°‘æœ‰ä¸€ä¸ªå­—ç¬¦å¹¶ä¸”æ‰€æœ‰å­—ç¬¦éƒ½æ˜¯å­—æ¯æˆ–æ•°å­—åˆ™è¿”å›True, å¦åˆ™è¿”å›False
 print '\'123\' is alnum ==', '123'.isalnum()
 
-# string.join(seq), ÒÔstring×÷Îª·Ö¸ô·û, ½«seqÖĞËùÓĞµÄÔªËØ(×Ö·û´®)±íÊ¾ºÏ²¢ÎªÒ»¸öĞÂµÄ×Ö·û´®
+# string.join(seq), ä»¥stringä½œä¸ºåˆ†éš”ç¬¦, å°†seqä¸­æ‰€æœ‰çš„å…ƒç´ (å­—ç¬¦ä¸²)è¡¨ç¤ºåˆå¹¶ä¸ºä¸€ä¸ªæ–°çš„å­—ç¬¦ä¸²
 print ':'.join('hello world')
 
-# ×ª»»ËùÓĞ´óĞ´×Ö·ûÎªĞ¡Ğ´
+# è½¬æ¢æ‰€æœ‰å¤§å†™å­—ç¬¦ä¸ºå°å†™
 print 'HELLO WORLD'.lower()
 
-# È¥µô×ó±ßµÄ¿Õ¸ñ
+# å»æ‰å·¦è¾¹çš„ç©ºæ ¼
 print '\'' + '    hello world     '.lstrip() + '\''
 
-# È¥µôÓÒ±ßµÄ¿Õ¸ñ
+# å»æ‰å³è¾¹çš„ç©ºæ ¼
 print '\'' + '    hello world     '.rstrip() + '\''
 
-# Ìæ»»×Ö·û´®, Èç¹ûnumÖ¸¶¨, ÔòÌæ»»´ÎÊı²»³¬¹ınum
+# æ›¿æ¢å­—ç¬¦ä¸², å¦‚æœnumæŒ‡å®š, åˆ™æ›¿æ¢æ¬¡æ•°ä¸è¶…è¿‡num
 print 'hello world'.replace('world', 'simon')
 
-# ÀàËÆfind, ²»¹ıÊÇ²éÕÒ×îºóÒ»¸ö³öÏÖµÄ×Ö·û
+# ç±»ä¼¼find, ä¸è¿‡æ˜¯æŸ¥æ‰¾æœ€åä¸€ä¸ªå‡ºç°çš„å­—ç¬¦
 print 'hello world'.rfind('o')
 
-# ¼ì²é×Ö·û´®ÊÇ·ñÒÔobj¿ªÍ·
+# æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦ä»¥objå¼€å¤´
 print 'hello world'.startswith('hl')
 
-# ·­×ª×Ö·û´®´óĞ¡Ğ´
+# ç¿»è½¬å­—ç¬¦ä¸²å¤§å°å†™
 print 'hELLO wORLD'.swapcase()
